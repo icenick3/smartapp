@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url("images/backgroundLoginPage.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  @media (max-width: 768px){
+    background: white;
+    overflow: hidden;
+  }
+}
+.flex{
+  display: flex;
+}
+
+.app {
+  @media (max-width: 768px){
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+
+
+
