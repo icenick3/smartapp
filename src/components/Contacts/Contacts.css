@@ -1,0 +1,162 @@
+.contactsBox {
+  width: 30%;
+  height: 89%;
+  background-color: white;
+  border: 1px solid rgb(189, 189, 189);
+  overflow: auto;
+}
+.contactsBox::-webkit-scrollbar {
+  display: none;
+}
+@media (max-width: 1600px) {
+  .contactsBox {
+    height: 96%;
+  }
+}
+@media (max-width: 768px) {
+  .contactsBox {
+    width: 100%;
+    height: 92%;
+  }
+}
+.contactsBox .userHead {
+  width: 100%;
+  height: 18%;
+  background-color: white;
+  border-bottom: 1px solid rgb(189, 189, 189);
+}
+@media (max-width: 1600px) {
+  .contactsBox .userHead {
+    height: 22%;
+  }
+}
+@media (max-height: 700px) {
+  .contactsBox .userHead {
+    height: 25%;
+  }
+}
+@media (max-height: 800px) {
+  .contactsBox .userHead {
+    height: 25%;
+  }
+}
+.contactsBox .userHead .userInform {
+  display: flex;
+  width: 100%;
+  background: white;
+}
+.contactsBox .userHead .userInform h4 {
+  display: block;
+  margin: 0 3%;
+  font-family: Montserrat, sans-serif;
+  font-size: 25px;
+  padding: 30px;
+}
+@media (max-width: 768px) {
+  .contactsBox .userHead .userInform h4 {
+    margin: 0;
+  }
+}
+@media (max-width: 1600px) {
+  .contactsBox .userHead .userInform h4 {
+    margin: 0;
+  }
+}
+.contactsBox .userHead .userInform .userPhoto {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: 3%;
+}
+@media only screen and (max-width: 768px) {
+  .contactsBox .userHead .userInform .userPhoto {
+    margin: 6% auto 2% 1%;
+  }
+}
+.contactsBox .userHead .userInform .addContact {
+  width: 30px;
+  height: 30px;
+  margin: 7% 4% 0 auto;
+}
+@media (max-width: 768px) {
+  .contactsBox .userHead .userInform .addContact {
+    margin: 7% 10% 0 auto;
+  }
+}
+.contactsBox .userHead .userInform .addContact:hover {
+  cursor: pointer;
+}
+.contactsBox .userHead input {
+  width: 90%;
+  display: block;
+  margin: 5px auto;
+  height: 40px;
+  border-radius: 25px;
+  border-color: rgb(189, 189, 189);
+  font-family: Montserrat, sans-serif;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+.contactsBox .contacts {
+  width: 100%;
+  height: 74%;
+}
+@media (max-width: 768px) {
+  .contactsBox .contacts {
+    height: 50%;
+  }
+}
+.contactsBox .contacts .realContacts h4 {
+  margin-top: 10px;
+  font-family: Montserrat, sans-serif, sans-serif;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.contactsBox .contacts .possibleContacts h4 {
+  margin-top: 10px;
+  font-family: Montserrat, sans-serif, sans-serif;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.mobileFooter {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 9%;
+  display: none;
+  background: white;
+  bottom: 0;
+  right: 0;
+}
+@media (max-width: 768px) {
+  .mobileFooter {
+    display: flex;
+  }
+}
+.mobileFooter #setting {
+  width: 50px;
+  height: 50px;
+  background-image: url("../../images/settings.png");
+  background-size: 50px 50px;
+  margin: 3% auto 3% 25%;
+}
+@media (max-width: 768px) {
+  .mobileFooter #setting {
+    display: block;
+  }
+}
+.mobileFooter #logOut {
+  width: 50px;
+  height: 50px;
+  background-image: url("../../images/logOutLogo.png");
+  background-size: 50px 50px;
+  margin: 3% 25% 3% auto;
+}
+@media (max-width: 768px) {
+  .mobileFooter #logOut {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=Contacts.css.map */

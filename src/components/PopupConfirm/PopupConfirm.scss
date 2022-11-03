@@ -1,0 +1,45 @@
+.confirm {
+  width: 40%;
+  height: 10%;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -5%;
+  margin-left: -20%;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.9s;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
+
+
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .confirm-content {
+    color: white;
+    display: block;
+    margin: 4% auto;
+    width: fit-content;
+    height: fit-content;
+    transform: scale(0.5);
+    transition: 0.9s all;
+    @media only screen and (max-width: 768px) {
+      border-radius: 0;
+    }
+
+
+    &.active{
+      transform: scale(1);
+
+    }
+  }
+}
+

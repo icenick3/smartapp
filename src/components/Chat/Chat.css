@@ -1,0 +1,107 @@
+.chatBox {
+  width: 100%;
+  background-color: white;
+  height: 100%;
+  border-right: 1px solid rgb(189, 189, 189);
+}
+@media only screen and (max-width: 768px) {
+  .chatBox {
+    position: absolute;
+    height: 95%;
+  }
+}
+.chatBox .contactInfo {
+  width: 100%;
+  height: 12%;
+  background: white;
+  display: flex;
+  border-top: 1px solid rgb(189, 189, 189);
+  border-bottom: 1px solid rgb(189, 189, 189);
+}
+@media only screen and (max-width: 1600px) {
+  .chatBox .contactInfo {
+    height: 14%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .chatBox .contactInfo {
+    height: 13%;
+  }
+}
+.chatBox .contactInfo .userAvatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 15px;
+}
+@media only screen and (max-width: 768px) {
+  .chatBox .contactInfo .userAvatar {
+    margin: 5% auto;
+  }
+}
+.chatBox .contactInfo .closeChat {
+  width: 50px;
+  height: 50px;
+  margin: 2%;
+}
+@media only screen and (max-width: 768px) {
+  .chatBox .contactInfo .closeChat {
+    margin: 7% auto;
+  }
+}
+.chatBox .contactInfo h4 {
+  display: block;
+  width: fit-content;
+  margin: 20px auto 0 500px;
+  font-family: Montserrat, sans-serif;
+  font-size: 40px;
+}
+@media only screen and (max-width: 768px) {
+  .chatBox .contactInfo h4 {
+    font-size: 30px;
+    margin: 7% auto;
+  }
+}
+.chatBox .chat {
+  width: 100%;
+  height: 64%;
+  background: white;
+  overflow: auto;
+}
+@media (max-width: 768px) {
+  .chatBox .chat {
+    height: 70%;
+  }
+}
+.chatBox .chat::-webkit-scrollbar {
+  display: none;
+}
+.chatBox .addMessage {
+  border-top: solid 1px rgb(189, 189, 189);
+}
+
+.noChat {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: solid 1px rgb(189, 189, 189);
+  border-left: none;
+}
+@media (max-width: 768px) {
+  .noChat {
+    display: none;
+  }
+}
+.noChat h1 {
+  display: block;
+  width: fit-content;
+  font-family: Oswald, sans-serif;
+  margin: 350px auto;
+}
+@media (max-width: 1600px) {
+  .noChat h1 {
+    margin: 250px auto;
+  }
+}
+
+/*# sourceMappingURL=Chat.css.map */

@@ -1,0 +1,27 @@
+.homePage .main {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+}
+@media only screen and (max-width: 1600px) {
+  .homePage .main {
+    height: 700px;
+  }
+}
+@media (max-width: 768px) {
+  .homePage .main {
+    height: 850px;
+  }
+}
+@media (max-height: 768px) {
+  .homePage .main {
+    height: 660px;
+  }
+}
+@media (max-height: 800px) and (min-height: 740px) {
+  .homePage .main {
+    height: 720px;
+  }
+}
+
+/*# sourceMappingURL=HomePage.css.map */

@@ -1,0 +1,10 @@
+.registerPage {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .registerPage {
+    height: 1000px;
+  }
+}
+
+/*# sourceMappingURL=RegisterPage.css.map */

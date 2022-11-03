@@ -1,0 +1,137 @@
+$firstColor: #FF4500;
+$secondColor: #FF00FF;
+$thirdColor: #8A2BE2;
+
+
+.userDetailsHeader {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  font-size: 30px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-top: 10%;
+    box-shadow: none;
+    background: none;
+  }
+
+  .logo {
+    margin: 20px 0 20px 25%;
+    cursor: pointer;
+    display: flex;
+    @media (max-width: 768px) {
+      margin: 8% auto 5% auto;
+    }
+
+
+    img {
+      width: 50px;
+      height: 50px;
+      filter: invert(13%) sepia(55%) saturate(5182%) hue-rotate(270deg) brightness(76%) contrast(121%);
+      @media (max-width: 768px) {
+        filter: none;
+      }
+    }
+
+    h4 {
+      padding: 0 0 0 10px;
+      color: $thirdColor;
+      font-family: Oswald, sans-serif;
+      @media (max-width: 768px) {
+        color: black;
+      }
+    }
+  }
+
+  .links {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    margin: 20px 25% 20px 0;
+    @media (max-width: 768px) {
+      width: fit-content;
+      height: fit-content;
+    }
+
+
+    a {
+      text-decoration: none;
+      font-family: Sans, sans-serif;
+    }
+    .linkLogOut{
+      @media (max-width: 768px) {
+        position: relative;
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+
+    .chatsLink {
+      color: $thirdColor;
+      margin-right: 50px;
+      padding: 8px 8px 0 8px;
+      cursor: pointer;
+      @media (max-width: 768px) {
+        display: none;
+      }
+
+
+      &:hover {
+        text-decoration: underline;
+        color: $firstColor;
+
+        img {
+          filter: invert(38%) sepia(79%) saturate(4154%) hue-rotate(0deg) brightness(101%) contrast(109%);
+        }
+
+      }
+
+      img {
+        width: 22px;
+        height: 22px;
+        filter: invert(13%) sepia(55%) saturate(5182%) hue-rotate(270deg) brightness(76%) contrast(121%);
+      }
+    }
+
+    .logOutLink {
+      color: $thirdColor;
+      padding: 8px 8px 0 8px;
+      cursor: pointer;
+
+      span {
+        @media (max-width: 768px) {
+          font-size: 0;
+        }
+      }
+
+
+      &:hover {
+        color: $firstColor;
+        text-decoration: underline;
+
+        img {
+          filter: invert(38%) sepia(79%) saturate(4154%) hue-rotate(0deg) brightness(101%) contrast(109%);
+          @media (max-width: 768px) {
+            filter: none;
+          }
+        }
+      }
+
+      img {
+        width: 22px;
+        height: 22px;
+        filter: invert(13%) sepia(55%) saturate(5182%) hue-rotate(270deg) brightness(76%) contrast(121%);
+        @media (max-width: 768px) {
+          filter: none;
+          width: 50px;
+          height: 50px;
+          position: absolute;
+        }
+      }
+    }
+  }
+}

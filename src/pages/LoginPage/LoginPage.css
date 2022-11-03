@@ -1,0 +1,10 @@
+.loginPage {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .loginPage {
+    height: 1000px;
+  }
+}
+
+/*# sourceMappingURL=LoginPage.css.map */
