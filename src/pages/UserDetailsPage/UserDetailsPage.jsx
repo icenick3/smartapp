@@ -12,7 +12,7 @@ const UserDetailsPage = () => {
 
   return isAuth ? (
     <div>
-      <UserDetailsHeader />
+      <UserDetailsHeader/>
       <FormUserDetails setLoading={setLoading} />
       {loading && <Loader loading={loading} />}
     </div>

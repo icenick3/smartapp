@@ -43,6 +43,7 @@ const FormUserDetails = ({ setLoading }) => {
       if (!username) {
         return;
       }
+      await setLoading(true)
       await setDoc(doc(db, email, "contacts"), {});
       await setDoc(doc(db, email, "friendRequest"), {});
       await setDoc(doc(db, email, "user"), {
@@ -54,12 +55,6 @@ const FormUserDetails = ({ setLoading }) => {
       });
       await setDoc(doc(db, "userChats", id), {});
       navigate("/");
-    }
-  };
-
-  const onClick = () => {
-    if (image !== null && username && aboutMe) {
-      setLoading(true);
     }
   };
   return (
@@ -107,7 +102,7 @@ const FormUserDetails = ({ setLoading }) => {
             <div className="description">{aboutMe}</div>
           </div>
         </div>
-        <button onClick={() => onClick()}>Create user</button>
+        <button>Create user</button>
       </form>
     </div>
   );

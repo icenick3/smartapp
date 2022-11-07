@@ -33,6 +33,7 @@ const FormRegister = ({ setLoading }) => {
               );
             }
           );
+          setLoading(true)
           localStorage.setItem("email", email);
           localStorage.setItem("password", pass);
           await updateDoc(doc(db, "users", "emails"), {
@@ -93,7 +94,7 @@ const FormRegister = ({ setLoading }) => {
           </p>
         </div>
         <div className={"btn"}>
-          <button onClick={() => setLoading(true)}>Register</button>
+          <button>Register</button>
         </div>
       </form>
     </div>
